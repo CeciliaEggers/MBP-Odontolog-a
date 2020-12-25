@@ -10,50 +10,80 @@
 		box-sizing: Border-box;
 	}
 
-	/*estilos de logo e info*/
-	.logo {
-		margin-left: 90px
+	/*estilos de logo y nabvar*/
+	
+	header nav {
+		min-height: 100px;
+		height: 100%;
 	}
-
-	.nav-item {
-		margin-right: 200px;
-		font-size: 16px;
-		font-family: 'Lato', sans-serif;
+	
+	.nav-item a {
 		color: $grey;
-		padding: 0 20px;
-
-	}
-
-	/*estilos de navbar*/
-	.nav-link {
 		font-size: 20px;
-		text-transform: uppercase;
-		text-decoration: none;
 		font-family: 'Lato', sans-serif;
+		transition: 0.3s;
 	}
-
-	a {
-		&:hover {
-			background: $hover;
-		}
+	
+	.nav-item a:hover {
+		transform: scale(1.05);
+		color: $boton!important;
 	}
-
-	.navbar {
-		.nav-item {
-				margin-right: 10px;
-			}
-	}
-
+	
 
 	/*estilos de index*/
 
-	@media only screen and (min-width: 760px) {
-		.imahome {
-			max-width: 100%;
-			display: block;
-			background-position: center center;
-		}
-	}
+	.mainIndex__container__row--tituloPrincipal2 {
+  background: linear-gradient(to right, #249e41 ,  #32c95d  50%); }
+  .mainIndex__container__row--tituloPrincipal2 div {
+    max-width: 500px;
+    width: 85%;
+    margin: 20px 0px 20px 0px; }
+    .mainIndex__container__row--tituloPrincipal2 div h1 {
+      color: #E9EAEA;
+      font-weight: normal;
+      font-family: 'Lato', sans-serif;
+      padding: 30px 0px 30px 0px;
+      margin: 0;
+      font-size: 3rem;
+      text-align: center; }
+    .mainIndex__container__row--tituloPrincipal2 div hr {
+      border: solid 1.5px #E9EAEA;
+      animation-name: efecto1;
+      animation-iteration-count: initial;
+      animation-duration: 3s; }
+
+@keyframes efecto1 {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+#degradadoImgPrincipal {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(51, 204, 186, 0) 35%,  #32c95d  95%); }
+  @media (max-width: 765px) {
+    #degradadoImgPrincipal {
+	  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(27, 149, 180, 0) 35%,  #32c95d  95%); } }
+
+.mainIndex__c-subTitulos {
+  background-color: $white;
+  text-align: center;
+  padding: 80px 20px; }
+  .mainIndex__c-subTitulos h2 {
+    color: #13bf60;
+    padding-bottom: 50px;
+    font-size: 2.5rem;
+	font-weight: 400; }
+	
+	.mb-0 {
+		color: $grey;
+		padding-bottom: 50px;
+		font-size: 1.5rem;
+		font-weight: 400;}
+      
+
 
 
 	/* Smartphones (portrait) ----------- */
@@ -67,15 +97,16 @@
 	}
 
 	/*estilos de sobre mí*/
+	.container-fluid {background-color:#fafcfa;
+margin-bottom: 50px;
+margin-top: auto}
+	
 	.img-fluid {
 		margin-top: 40px;
-		height: 400px;
-		width: 550px;
+		margin-left: 40px
 	}
-
-
 	.nombre {
-		font-weight: bold;
+
 		margin-top: 40px;
 		margin-bottom: 40px;
 		border-radius: 20px;
@@ -110,7 +141,7 @@
 	}
 
 	/*estilos de tratamientos*/
-
+.jumbotron {background-color: #2ccc6f;}
 	h1.tratamientos {
 		text-align: center;
 		margin-top: 20px;
@@ -170,8 +201,34 @@
 
 
 	/*estilos de contacto*/
-	.contactate {
+	.photo-full-container-background,
+.photo-full-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.photo-full-container-background {
+	background-color: black;
+	z-index: 9998;
+	opacity: 0.7;
+}
+
+.photo-full-container {
+	z-index: 9999;
+	color: white;
+}
+
+.hide-photo-full-container {
+	display: none;
+}
+
+	h3.contactate {
+		background-color: #eaeceb;
 		text-align: center;
+		padding: 20px;
 		font-family: 'Roboto', sans-serif;
 		margin-bottom: 50px;
 	}
@@ -287,12 +344,13 @@
 	.footer {
 
 		padding: 9px;
-
 		background: $black;
-
+	
 	}
 
 	.footer__texto {
 		color: $white;
 		font-family: 'Lato', sans-serif;
 	}
+	.footer__texto2 {color:$white;
+	margin-left: 900px;}
