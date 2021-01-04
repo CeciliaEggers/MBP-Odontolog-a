@@ -1,63 +1,41 @@
-	$hover:#e3ffde;
 	$grey: #474747;
 	$white: #ffffff;
 	$green: #109c4a;
 	$boton:#5fecaa;
-	$fondocard: #f6faf8;
 	$black:#111111;
+	$gradient1: #249e41;
+	$gradient2: #32c95d;
+	$light: #f3f3f3;
 
 	* {
 		box-sizing: Border-box;
 	}
 
 	/*estilos de logo y nabvar*/
-
-	header nav {
-		min-height: 100px;
-		height: 100%;
+	header {
+		nav {
+			min-height: 100px;
+			height: 100%;
+		}
 	}
 
-	.nav-item a {
-		color: $grey;
-		font-size: 20px;
-		font-family: 'Lato', sans-serif;
-		transition: 0.3s;
+	.nav-item {
+		a {
+			color: $grey;
+			font-size: 20px;
+			font-family: 'Lato', sans-serif;
+			transition: 0.3s;
+
+			&:hover {
+				transform: scale(1.05);
+				color: $boton !important;
+			}
+		}
 	}
 
-	.nav-item a:hover {
-		transform: scale(1.05);
-		color: $boton !important;
-	}
 
 
 	/*estilos de index*/
-
-	.mainIndex__container__row--tituloPrincipal2 {
-		background: linear-gradient(to right, #249e41, #32c95d 50%);
-	}
-
-	.mainIndex__container__row--tituloPrincipal2 div {
-		max-width: 500px;
-		width: 85%;
-		margin: 20px 0px 20px 0px;
-	}
-
-	.mainIndex__container__row--tituloPrincipal2 div h1 {
-		color: #E9EAEA;
-		font-weight: normal;
-		font-family: 'Lato', sans-serif;
-		padding: 30px 0px 30px 0px;
-		margin: 0;
-		font-size: 3rem;
-		text-align: center;
-	}
-
-	.mainIndex__container__row--tituloPrincipal2 div hr {
-		border: solid 1.5px #E9EAEA;
-		animation-name: efecto1;
-		animation-iteration-count: initial;
-		animation-duration: 3s;
-	}
 
 	@keyframes efecto1 {
 		from {
@@ -69,30 +47,51 @@
 		}
 	}
 
+	.mainIndex__container__row--tituloPrincipal2 {
+		background: linear-gradient(to right, $gradient1, $gradient2 50%);
+
+		div {
+			max-width: 500px;
+			width: 85%;
+			margin: 20px 0px 20px 0px;
+
+			h1 {
+				color: $white;
+				font-weight: normal;
+				font-family: 'Lato', sans-serif;
+				padding: 30px 0px 30px 0px;
+				margin: 0;
+				font-size: 3rem;
+				text-align: center;
+			}
+
+			hr {
+				border: solid 1.5px $white;
+				animation-name: efecto1;
+				animation-iteration-count: initial;
+				animation-duration: 3s;
+			}
+		}
+	}
+
 	#degradadoImgPrincipal {
 		height: 100%;
 		width: 100%;
 		position: absolute;
-		background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(51, 204, 186, 0) 35%, #32c95d 95%);
-	}
-
-	@media (max-width: 765px) {
-		#degradadoImgPrincipal {
-			background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(27, 149, 180, 0) 35%, #32c95d 95%);
-		}
+		background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(51, 204, 186, 0) 35%, $gradient2 95%);
 	}
 
 	.mainIndex__c-subTitulos {
 		background-color: $white;
 		text-align: center;
 		padding: 80px 20px;
-	}
 
-	.mainIndex__c-subTitulos h2 {
-		color: #13bf60;
-		padding-bottom: 50px;
-		font-size: 2.5rem;
-		font-weight: 400;
+		h2 {
+			color: $green;
+			padding-bottom: 50px;
+			font-size: 2.5rem;
+			font-weight: 400;
+		}
 	}
 
 	.mb-0 {
@@ -102,7 +101,11 @@
 		font-weight: 400;
 	}
 
-
+	@media (max-width: 765px) {
+		#degradadoImgPrincipal {
+			background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(27, 149, 180, 0) 35%, $gradient2 95%);
+		}
+	}
 
 
 	/* Smartphones (portrait) ----------- */
@@ -116,11 +119,12 @@
 	}
 
 	/*estilos de sobre mí*/
+
 	.container-fluid-sobremi {
-		background-color: #fcfcfc;
-		margin-bottom: 50px;
+		background-color: #fcfffd;
 		margin-top: auto;
-		padding: 50px
+		margin-bottom: 50px;
+		padding: 50px;
 	}
 
 	.img-fluid {
@@ -128,16 +132,7 @@
 		margin-right: 50px;
 	}
 
-	@media only screen and (max-width: 760px) {
-		.img-fluid {
-			max-width: 100%;
-			display: block;
-			background-position: center center;
-		}
-	}
-
 	.nombre {
-
 		margin-top: 40px;
 		margin-bottom: 40px;
 		border-radius: 20px;
@@ -145,7 +140,6 @@
 		font-size: 30px;
 		font-weight: 20px;
 		font-family: 'Roboto', sans-serif;
-
 	}
 
 	.bio {
@@ -157,14 +151,21 @@
 		font-size: 18px;
 		font-weight: 20px;
 		font-family: 'Roboto', sans-serif;
+	}
 
+	@media only screen and (max-width: 760px) {
+		.img-fluid {
+			max-width: 100%;
+			display: block;
+			background-position: center center;
+		}
 	}
 
 
 
 	/*estilos de tratamientos*/
 	.jumbotron {
-		background-color: #fdfdfd;
+		background-color: $light;
 	}
 
 	h1.tratamientos {
@@ -184,7 +185,6 @@
 		margin-top: 20px;
 	}
 
-
 	.card-text {
 		margin-top: 20px;
 		margin-bottom: 10px;
@@ -194,7 +194,7 @@
 		font-weight: 10px;
 		font-family: 'Roboto', sans-serif;
 		margin-left: auto;
-		margin-right: auto
+		margin-right: auto;
 	}
 
 	.btn-outline-success {
@@ -202,9 +202,7 @@
 		line-height: normal;
 		font-size: 18px;
 		font-family: 'Roboto', sans-serif;
-
 	}
-
 
 
 	/*estilos de intalaciones*/
@@ -243,55 +241,34 @@
 
 
 	}
-
-
-
-
 	/*estilos de contacto*/
 
 	.contact {
 		background: linear-gradient(rgba(27, 189, 54, 0.6), rgba(42, 255, 67, 0.6)), url("../img/fotofondo.jpg");
 		background-size: cover;
 		padding: 30px;
-		margin-bottom: 0
+		margin-bottom: 0;
 	}
-
-	@media only screen and (max-width: 760px) {
-		.contact {
-			max-width: 100%;
-			display: block;
-			background-position: center center;
-		}
-	}
-
 
 	.form {
 		width: 400px;
 		height: 450px;
-		background: #e0f8e2;
+		background: $light;
 		border-radius: 8px;
-		box-shadow: 0 0 40px -10px #000;
+		box-shadow: 0 0 40px -10px $black;
 		margin: calc(50vh - 220px) auto;
 		padding: 20px 30px;
 		box-sizing: border-box;
 		font-family: 'Roboto', sans-serif;
-
 	}
-
-	@media only screen and (max-width: 360px) {
-		.form {
-			max-width: 100%;
-		}
-	}
-
 
 	.contactate {
 		margin-right: auto;
 		margin-left: auto;
 		padding-bottom: 10px;
 		width: 200px;
-		color: #78788c;
-		border-bottom: 3px solid #78788c
+		color: $grey;
+		border-bottom: 3px solid $grey;
 	}
 
 	input {
@@ -303,19 +280,21 @@
 		resize: none;
 		border: 0;
 		font-family: 'Roboto', sans-serif;
-		border-bottom: 2px solid #bed2be
+		border-bottom: 2px solid #bed2be;
+
+		&:focus {
+			border-bottom: 2px solid #6cac8f;
+		}
 	}
 
-	input:focus {
-		border-bottom: 2px solid #788c83
-	}
-
-	p:before {
-		content: attr(type);
-		display: block;
-		margin: 28px 0 0;
-		font-size: 14px;
-		color: #5a5a5a
+	p {
+		&:before {
+			content: attr(type);
+			display: block;
+			margin: 28px 0 0;
+			font-size: 14px;
+			color: #5a5a5a;
+		}
 	}
 
 	button {
@@ -327,15 +306,20 @@
 		background: 0;
 		color: #5a5a6e;
 		cursor: pointer;
-		transition: all .3s
-	}
+		transition: all .3s;
 
-	button:hover {
-		background: #50b67a;
-		color: #fff
+		&:hover {
+			background: $green;
+			color: $light;
+		}
 	}
 
 	span {
-		margin: 0 5px 0 15px
+		margin: 0 5px 0 15px;
 	}
 
+	@media only screen and (max-width: 360px) {
+		.form {
+			max-width: 100%;
+		}
+	}
