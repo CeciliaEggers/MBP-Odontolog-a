@@ -116,16 +116,24 @@
 	}
 
 	/*estilos de sobre mí*/
-	.container-fluid {
-		background-color: #fafcfa;
+	.container-fluid-sobremi {
+		background-color: #fcfcfc;
 		margin-bottom: 50px;
-		margin-top: auto
+		margin-top: auto;
+		padding: 50px
 	}
 
 	.img-fluid {
 		margin-top: 40px;
 		margin-right: 50px;
-		padding: 60px
+	}
+
+	@media only screen and (max-width: 760px) {
+		.img-fluid {
+			max-width: 100%;
+			display: block;
+			background-position: center center;
+		}
 	}
 
 	.nombre {
@@ -137,7 +145,7 @@
 		font-size: 30px;
 		font-weight: 20px;
 		font-family: 'Roboto', sans-serif;
-		margin-left: 50px;
+
 	}
 
 	.bio {
@@ -149,22 +157,14 @@
 		font-size: 18px;
 		font-weight: 20px;
 		font-family: 'Roboto', sans-serif;
-		margin-left: 50px;
-		margin-right: 80px;
+
 	}
 
-	.btn-outline-success {
-		text-decoration: none;
-		line-height: normal;
-		font-size: 18px;
-		margin-right: 500px;
-		font-family: 'Roboto', sans-serif;
-		
-	}
+
 
 	/*estilos de tratamientos*/
 	.jumbotron {
-		background-color: #30c970;
+		background-color: #fdfdfd;
 	}
 
 	h1.tratamientos {
@@ -181,7 +181,7 @@
 		height: 70x;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 20px
+		margin-top: 20px;
 	}
 
 
@@ -197,11 +197,23 @@
 		margin-right: auto
 	}
 
+	.btn-outline-success {
+		text-decoration: none;
+		line-height: normal;
+		font-size: 18px;
+		font-family: 'Roboto', sans-serif;
 
+	}
 
 
 
 	/*estilos de intalaciones*/
+
+	.display-5 {
+		color: $grey;
+		font-family: 'Roboto', sans-serif;
+	}
+
 	.galeria {
 		display: flex;
 		flex-wrap: wrap;
@@ -210,16 +222,27 @@
 		justify-content: center;
 		overflow: hidden;
 		margin-left: 10px;
-		margin-right: 10px;
-		
+		margin-right: 10px
 	}
 
 	.galeria__imagen {
-		border: 5px solid #ccc;
-float: left;
-margin: 15px;
+		margin: 10px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		flex: auto;
+		padding: 20px
+	}
 
-}
+	.galeria__imagen {
+		transition: all 1s ease;
+
+	}
+
+	.galeria__imagen:hover {
+		transform: scale(1.1);
+
+
+	}
 
 
 
@@ -227,11 +250,12 @@ margin: 15px;
 	/*estilos de contacto*/
 
 	.contact {
-		background: linear-gradient(rgba(74, 255, 156, 0.6), rgba(167, 255, 206, 0.6)), url("../fotofondo.jpg");
+		background: linear-gradient(rgba(27, 189, 54, 0.6), rgba(42, 255, 67, 0.6)), url("../img/fotofondo.jpg");
 		background-size: cover;
 		padding: 30px;
 		margin-bottom: 0
 	}
+
 	@media only screen and (max-width: 760px) {
 		.contact {
 			max-width: 100%;
@@ -240,7 +264,7 @@ margin: 15px;
 		}
 	}
 
-	
+
 	.form {
 		width: 400px;
 		height: 450px;
@@ -253,7 +277,7 @@ margin: 15px;
 		font-family: 'Roboto', sans-serif;
 
 	}
-	
+
 	@media only screen and (max-width: 360px) {
 		.form {
 			max-width: 100%;
@@ -270,54 +294,48 @@ margin: 15px;
 		border-bottom: 3px solid #78788c
 	}
 
-input {
-	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	background: none;
-	outline: none;
-	resize: none;
-	border: 0;
-	font-family: 'Roboto', sans-serif;
-	border-bottom: 2px solid #bed2be
-}
+	input {
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		background: none;
+		outline: none;
+		resize: none;
+		border: 0;
+		font-family: 'Roboto', sans-serif;
+		border-bottom: 2px solid #bed2be
+	}
 
-input:focus {
-	border-bottom: 2px solid #788c83
-}
+	input:focus {
+		border-bottom: 2px solid #788c83
+	}
 
-p:before {
-	content: attr(type);
-	display: block;
-	margin: 28px 0 0;
-	font-size: 14px;
-	color: #5a5a5a
-}
+	p:before {
+		content: attr(type);
+		display: block;
+		margin: 28px 0 0;
+		font-size: 14px;
+		color: #5a5a5a
+	}
 
-button {
-	float: right;
-	padding: 8px 12px;
-	margin: 8px 0 0;
-	font-family: 'Roboto', sans-serif;
-	border: 2px solid #88ac81;
-	background: 0;
-	color: #5a5a6e;
-	cursor: pointer;
-	transition: all .3s
-}
+	button {
+		float: right;
+		padding: 8px 12px;
+		margin: 8px 0 0;
+		font-family: 'Roboto', sans-serif;
+		border: 2px solid #88ac81;
+		background: 0;
+		color: #5a5a6e;
+		cursor: pointer;
+		transition: all .3s
+	}
 
-button:hover {
-	background: #50b67a;
-	color: #fff
-}
+	button:hover {
+		background: #50b67a;
+		color: #fff
+	}
 
-span {
-	margin: 0 5px 0 15px
+	span {
+		margin: 0 5px 0 15px
+	}
 
-}
-
-
-/*estilos de footer*/
-	footer {background-color: $black;
-	padding: 9px;}
-	.footer__texto {color: $white}
