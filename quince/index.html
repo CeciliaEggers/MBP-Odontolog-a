@@ -8,27 +8,29 @@
       <meta name="keywords"
             content="ODONTOLOGA, DENTISTAS, DIENTES, SONRISAS SANAS, ORTODONOCIA, ESTETICA DENTAL, CARIES, DENTAL">
       <title>
-            Od. María Belén Panfili. Contactate.
+            Od. María Belén Panfili. Odontología integral.
       </title>
       <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tag de Viewport -->
-      <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-      <link rel="stylesheet" href="../css/main.css">
-      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300&display=swap"
-            rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <!-- <script src="main.js"></script> -->
       <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
             integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous">
       </script>
-      <script src="../js/jquery-3.5.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+      </script>
 </head>
 
 <body>
+
       <header>
 
             <nav class="navbar navbar-expand-md navbar-light bg-withe">
                   <div>
-                        <a href="../index.html">
-                              <img src="../img/logo.jpg" alt="logo.mbp.jpg">
+                        <a href="index.html">
+                              <img src="img/logo.jpg" alt="logo.mbp.jpg">
                         </a>
                   </div>
 
@@ -40,36 +42,68 @@
                   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav text-center">
                               <li class="nav-item">
-                                    <a class="nav-link" href="../index.html">Home</a>
+                                    <a id="homeLink" class="nav-link" href="index.html">Home</a>
                               </li>
                               <li class="nav-item">
-                                    <a class="nav-link" href="sobremi.html">Sobre mí</a>
+                                    <a id="servicesLink" class="nav-link" href="pag/sobremi.html">Sobre mí</a>
                               </li>
                               <li class="nav-item">
-                                    <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+                                    <a id="galeryLink" class="nav-link" href="pag/tratamientos.html">Tratamientos</a>
                               </li>
                               <li class="nav-item">
-                                    <a class="nav-link" href="instalaciones.html">Instalaciones</a>
+                                    <a id="aboutMeLink" class="nav-link" href="pag/instalaciones.html">Instalaciones</a>
                               </li>
                               <li class="nav-item">
-                                    <a  class="nav-link" href="contacto.html">Contacto</a>
+                                    <a id="contactLink" class="nav-link" href="pag/contacto.html">Contacto</a>
                               </li>
                         </ul>
                   </div>
             </nav>
 
       </header>
-      <div>
-            <section class="contact container-fluid" id="contact">
 
-                  <form class="form">
-                        <h2 class="contactate">CONTACTATE</h2>
-                        <p type="Nombre y apellido:"><input placeholder="Escribe tu nombre aquí"></input></p>
-                        <p type="Email:"><input placeholder="Escribe tu mail aquí"></input></p>
-                        <p type="Mensaje:"><input placeholder="Escribe un mensaje"></input></p>
-                        <button>Enviar</button>
-                  </form>
-            </section>
+      <main>
+            <main class="mainIndex">
+
+                  <section class="mainIndex__container container-fluid">
+
+                        <div class="mainIndex__container__row row">
+                              <div
+                                    class="mainIndex__container__row--tituloPrincipal2 col-xs-12 col-sm-12 col-md-6 p-0 d-flex justify-content-center align-items-center">
+                                    <div>
+                                          <hr>
+                                          <h1> Sonrisas más sanas</h1>
+                                          <hr>
+                                    </div>
+                              </div>
+
+                              <div class="mainIndex__container__row__imagenPrincipal col-xs-12 col-sm-12 col-md-6 p-0">
+
+                                    <div id="degradadoImgPrincipal">
+                                    </div>
+
+                                    <div>
+                                          <img src="img/foto inicio.jpg" class="d-block w-100" alt="">
+                                    </div>
+
+                              </div>
+                        </div>
+                  </section>
+
+                  <section class="mainIndex__c-subTitulos">
+
+                        <h2>Od. María Belén Panfili</h2>
+                        <blockquote class="blockquote">
+                              <p class="mb-0">
+                                    Bridamos odontología integral para toda la familia y para todas las etapas de la
+                                    vida
+                              </p>
+                        </blockquote>
+
+                        <a href="pag/contacto.html" class="btn btn-lg btn-success">Agendá tu turno</a>
+                  </section>
+
+            </main>
 
 
             <footer class="page-footer bg-dark">
@@ -89,9 +123,9 @@
                         </div>
                   </div>
 
-                  <div class="container-fluid text-center text-md-left mt-5">
+                  <div class="container text-center text-md-left mt-5">
                         <div class="row">
-                              <div class="col-md-2 mx-auto mb-4">
+                              <div class="col-md-3 mx-auto mb-4">
 
                                     <h6 class="text-uppercase font-weight-bold text-white">MBP Odontología</h6>
                                     <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto"
@@ -103,22 +137,22 @@
 
                               <div class="col-md-2 mx-auto mb-4">
                                     <h6 class="text-uppercase font-weight-bold text-white">Links de interés</h6>
-                                    <hr class="bg-success mb-4 mt-2 d-inline-block mx-auto"
-                                          style="width: 130px; height: 2px">
+                                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto"
+                                          style="width: 150px; height: 2px">
 
-                                    <ul class="link__footer">
-                                          <li class="enlace__footer"><a href="../index.html">Home</a></li>
-                                          <li class="enlace__footer"><a href="sobremi.html">Sobre mí</a></li>
-                                          <li class="enlace__footer"><a href="tratamientos.html">Tratamientos</a></li>
-                                          <li class="enlace__footer"><a href="instalaciones.html">Instalaciones</a></li>
-                                          <li class="enlace__footer"><a href="contacto.html">Contacto</a></li>
+                                    <ul class="list-unstyled text-white">
+                                          <li class="my-2"><a href="index.html">Home</a></li>
+                                          <li class="my-2"><a href="pag/sobremi.html">Sobre mí</a></li>
+                                          <li class="my-2"><a href="pag/tratamientos.html">Tratamientos</a></li>
+                                          <li class="my-2"><a href="pag/instalaciones.html">Instalaciones</a></li>
+                                          <li class="my-2"><a href="pag/contacto.html">Contacto</a></li>
 
                                     </ul>
                               </div>
                               <div class="col-md-2 mx-auto mb-4">
-                                    <h6 class="text-uppercase font-weight-bold text-white">Horarios</h6>
-                                    <hr class="bg-success mb-1 mt-0 d-inline-block mx-auto"
-                                          style="width: 100px; height: 2px">
+                                    <h6 class="text-uppercase font-weight-bold text-white">Horarios de atención</h6>
+                                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto"
+                                          style="width: 160px; height: 2px">
                                     <p class="mt-d text-white">Lunes, Miércoles y Viernes de 9 a 19 hs. </p>
 
 
@@ -142,10 +176,9 @@
                         </div>
                   </div>
 
-                  <div class="footer-copyright text-center">
+                  <div class="footer-copyright text-center py3 text-white">
                         <p> ©copyright2020Coderhouse. Todos los derechos reservados</p>
                   </div>
-
 
 
                   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
