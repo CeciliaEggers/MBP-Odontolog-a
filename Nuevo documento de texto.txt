@@ -1,0 +1,14 @@
+    <div class="galeria">
+
+                  <!-- Bloque -->
+                  <img src="../img/instalaciones/1.jpg" alt="consultorio.silla.jpg" class="galeria__imagen">
+                  <img src="../img/instalaciones/2.jpg" alt="paciente.odontologa.jpg" class="galeria__imagen">
+                  <img src="../img/instalaciones/3.jpg" alt="instrumentacion" class="galeria__imagen">
+                  <img src="../img/instalaciones/4.jpg" alt="paciente.boca.jpg" class="galeria__imagen">
+                  <img src="../img/instalaciones/5.jpg" alt="molde.dientes.jpg" class="galeria__imagen">
+                  <img src="../img/instalaciones/6.jpg" alt="silla.verde.jpg" class="galeria__imagen">
+                  <img src="../img/instalaciones/7.jpg" alt="panel.instrumentos.jpg" class="galeria__imagen">
+                  <img src="../img/instalaciones/8.jpg" alt="paciente.acostada.jpg" class="galeria__imagen">
+                  <img src="../img/instalaciones/9.jpg" alt="frase.decorativa.jpg" class="galeria__imagen">
+
+            </div>
