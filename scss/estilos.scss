@@ -213,37 +213,34 @@
 		color: $grey;
 		font-family: 'Roboto', sans-serif;
 	}
+	#galeria .col-lg-4 .col-md-6 .col-sm-12{ margin:0 !important;
+	padding: 25px;
 
-	.galeria {
-		background-color:#f9f9f9;
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		justify-content: center;
-		overflow: hidden;
-		margin-left: 10px;
-		margin-right: 10px
-	}
+	
+ }
+ .container {margin-top: 50px;
+margin-bottom: 90px}
+.texto {text-decoration:none;
+	list-style-type:none;
+color: $grey;
+margin-top:20px;
+font-family: 'Roboto', sans-serif;
+text-align: center;
 
-	.galeria__imagen {
-		margin: 10px;
-		margin-top: 15px;
-		margin-bottom: 10px;
-		flex: auto;
-		padding: 20px
-	}
+}
 
-	.galeria__imagen {
-		transition: all 1s ease;
+	#galeria img {width:100%;
+	height: 250 px;
+	margin-top: 30px;
+
 
 	}
-
-	.galeria__imagen:hover {
+	#galeria img:hover {
+				transition: all 1s ease;
 		transform: scale(1.1);
-
-
-	}
+	cursor:pointer}
+  
+	
 	/*estilos de contacto*/
 
 	.contact {
@@ -255,7 +252,7 @@
 
 	.form {
 		width: 400px;
-		height: 450px;
+		height: 480px;
 		background: $light;
 		border-radius: 8px;
 		box-shadow: 0 0 40px -10px $black;
@@ -263,24 +260,24 @@
 		padding: 20px 30px;
 		box-sizing: border-box;
 		font-family: 'Roboto', sans-serif;
+	
 	}
+	.nombre {margin-top:10px}
 
 	.contactate {
 		margin-right: auto;
 		margin-left: auto;
-		padding-bottom: 10px;
+		padding-bottom: 5px;
 		width: 200px;
 		color: $grey;
 		border-bottom: 3px solid $grey;
 	}
+	.item {margin-top: 20px}
 
-	input {
+	.form__input {
 		width: 100%;
 		padding: 10px;
-		box-sizing: border-box;
 		background: none;
-		outline: none;
-		resize: none;
 		border: 0;
 		font-family: 'Roboto', sans-serif;
 		border-bottom: 2px solid #bed2be;
