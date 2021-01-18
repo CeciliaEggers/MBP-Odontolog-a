@@ -108,7 +108,7 @@
 	}
 
 
-	/* Smartphones (portrait) ----------- */
+	/* Smartphones----------- */
 
 	@media only screen and (max-width: 760px) {
 		.imahome {
@@ -147,8 +147,8 @@
 	.bio {
 		margin-top: 20px;
 		margin-bottom: 10px;
-		margin-right: 70px;
-		text-align: justify;
+		margin-right: 60px;
+		text-align:justify;
 		color: $grey;
 		font-size: 20px;
 		font-weight: 20px;
@@ -340,24 +340,6 @@
 		}
 	}
 
-	/*estilos de gracias*/
-	.gracias {
-		background: linear-gradient(rgba(27, 189, 54, 0.6), rgba(42, 255, 67, 0.6)), url("../img/fotofondo.jpg");
-		background-size: cover;
-		padding: 250px;
-	}
-
-	.gracias__titulo {
-		font-family: 'Roboto', sans-serif;
-		color: $grey;
-		font-size: 40px
-	}
-
-	.gracias__texto {
-		font-family: 'Roboto', sans-serif;
-		color: $grey;
-		font-size: 20px
-	}
 
 	/*estilos de footer*/
 
