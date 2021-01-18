@@ -121,17 +121,17 @@
 	/*estilos de sobre mí*/
 
 	.container-fluid-sobremi {
-		background-color:#f9f9f9;
-		padding:60px;
+		background-color: #f9f9f9;
+		padding: 50px;
 		margin-top: 40px;
-		margin-bottom: 40px;
-		
-		
+
+
 	}
 
 	.img-fluid {
 		margin-top: 40px;
-		margin-right: 50px;
+		margin-right: 60px;
+		margin-bottom: 50px
 	}
 
 	.nombre {
@@ -144,10 +144,10 @@
 		font-family: 'Roboto', sans-serif;
 	}
 
-	.bio  {
+	.bio {
 		margin-top: 20px;
-		margin-bottom: 20px;
-		margin-right: 50px;
+		margin-bottom: 10px;
+		margin-right: 70px;
 		text-align: justify;
 		color: $grey;
 		font-size: 20px;
@@ -213,34 +213,44 @@
 		color: $grey;
 		font-family: 'Roboto', sans-serif;
 	}
-	#galeria .col-lg-4 .col-md-6 .col-sm-12{ margin:0 !important;
-	padding: 25px;
 
-	
- }
- .container {margin-top: 50px;
-margin-bottom: 90px}
-.texto {text-decoration:none;
-	list-style-type:none;
-color: $grey;
-margin-top:20px;
-font-family: 'Roboto', sans-serif;
-text-align: center;
-
-}
-
-	#galeria img {width:100%;
-	height: 250 px;
-	margin-top: 30px;
+	#galeria .col-lg-4 .col-md-6 .col-sm-12 {
+		margin: 0 !important;
+		padding: 25px;
 
 
 	}
+
+	.container {
+		margin-top: 50px;
+		margin-bottom: 90px
+	}
+
+	.texto {
+		text-decoration: none;
+		list-style-type: none;
+		color: $grey;
+		margin-top: 20px;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+
+	}
+
+	#galeria img {
+		width: 100%;
+		height: 250 px;
+		margin-top: 30px;
+
+
+	}
+
 	#galeria img:hover {
-				transition: all 1s ease;
+		transition: all 1s ease;
 		transform: scale(1.1);
-	cursor:pointer}
-  
-	
+		cursor: pointer
+	}
+
+
 	/*estilos de contacto*/
 
 	.contact {
@@ -260,9 +270,12 @@ text-align: center;
 		padding: 20px 30px;
 		box-sizing: border-box;
 		font-family: 'Roboto', sans-serif;
-	
+
 	}
-	.nombre {margin-top:10px}
+
+	.nombre {
+		margin-top: 10px
+	}
 
 	.contactate {
 		margin-right: auto;
@@ -272,7 +285,10 @@ text-align: center;
 		color: $grey;
 		border-bottom: 3px solid $grey;
 	}
-	.item {margin-top: 20px}
+
+	.item {
+		margin-top: 20px
+	}
 
 	.form__input {
 		width: 100%;
@@ -324,26 +340,50 @@ text-align: center;
 		}
 	}
 
+	/*estilos de gracias*/
+	.gracias {
+		background: linear-gradient(rgba(27, 189, 54, 0.6), rgba(42, 255, 67, 0.6)), url("../img/fotofondo.jpg");
+		background-size: cover;
+		padding: 250px;
+	}
+
+	.gracias__titulo {
+		font-family: 'Roboto', sans-serif;
+		color: $grey;
+		font-size: 40px
+	}
+
+	.gracias__texto {
+		font-family: 'Roboto', sans-serif;
+		color: $grey;
+		font-size: 20px
+	}
+
 	/*estilos de footer*/
 
-	footer {background-color: #424443}
-	.footer-copyright p {color:white;
-		margin-bottom:0
-	
+	footer {
+		background-color: #424443
 	}
-	.enlace__footer{
-		text-decoration:none;
-		list-style-type:none;
-		margin-right:40px
-		
-		}
-					
-		a {
-		text-decoration:none;
-		color:$white;
-	
-	
-		}
-	.enlace__footer :hover {color:$white;
-	cursor:pointer}
-	
+
+	.footer-copyright p {
+		color: white;
+		margin-bottom: 0
+	}
+
+	.enlace__footer {
+		text-decoration: none;
+		list-style-type: none;
+		margin-right: 40px
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+
+
+	}
+
+	.enlace__footer :hover {
+		color: $white;
+		cursor: pointer
+	}
