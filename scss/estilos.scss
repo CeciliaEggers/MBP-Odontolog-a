@@ -148,7 +148,7 @@
 		margin-top: 20px;
 		margin-bottom: 10px;
 		margin-right: 60px;
-		text-align:justify;
+		text-align: justify;
 		color: $grey;
 		font-size: 20px;
 		font-weight: 20px;
@@ -340,6 +340,19 @@
 		}
 	}
 
+	/*estilos de gracias*/
+	.gracias {
+		background: linear-gradient(rgba(27, 189, 54, 0.6), rgba(42, 255, 67, 0.6)), url("../img/fotofondo.jpg");
+		background-size: cover;
+		padding: 300px;
+	}
+
+	.text {
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		color: $black;
+		font-size: 30px
+	}
 
 	/*estilos de footer*/
 
